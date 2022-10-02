@@ -5,6 +5,8 @@ const port = normalizePort(process.env.PORT || 3001)
 
 // Import routes 
 const productRouter = require('./routes/product')
+const categoryRouter = require('./routes/category')
+const cardRouter = require('./routes/card')
 
 // Middleware
 app.use(express.json())
@@ -14,6 +16,8 @@ app.set('port', port)
 
 // Routing
 app.use('/products', productRouter)
+app.use('/categories', categoryRouter)
+app.use('/card', cardRouter)
 
 try {
     app.listen(port, ()=>{
