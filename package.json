@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/MirzaabdullayevTest/techno-shop#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "mongoose": "^6.6.5"
   }
 }

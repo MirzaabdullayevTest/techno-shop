@@ -6,8 +6,14 @@ module.exports.getProducts = async function (req, res) {
 }
 
 module.exports.setProducts = async function (req, res) {
-    const products = req.body
-    await Product.save(products)
+    // const products = req.body
+    const product = new Product({
+        name: req.body.name,
+        price: +req.body.price,
+        categoryId: req.body.categoryId
+    })
 
-    res.status(201).send('Successfull')
+    await product.save()
+
+    res.redirect('/products/')
 }
