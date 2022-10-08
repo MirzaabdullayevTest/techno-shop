@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 
 const uri = 'mongodb+srv://Mirzaabdullayev:y4gbpBYq0sSEQV9D@cluster0.nfjiuah.mongodb.net/techno-shop'
 
-// 63417e3af04588c24c11dde3
+// 63417e3af04588c24c11dde3 
 // 63417fde7b192a08041e3836
 
 const port = normalizePort(process.env.PORT || 3001)
